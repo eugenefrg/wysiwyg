@@ -1,4 +1,4 @@
-import replaceSelected from "./replaceSelected";
+// import replaceSelected from "./replaceSelected";
 
 export enum Emphasis {
   Bold = "b",
@@ -18,7 +18,7 @@ function setEmphasis(emphasisType: Emphasis) {
 
   const elementArray = elements && Array.from(elements);
   elementArray?.forEach(() => {
-    const listItem = document.createElement("li");
+    // const listItem = document.createElement("li");
     // listItem.append(element);
     // listItems.appendChild(listItem);
   });

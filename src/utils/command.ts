@@ -12,7 +12,7 @@ function checkCommandResult(result: boolean) {
 /**
  * A collection of commands that are based on `document.execCommand`.
  */
-export default {
+const command = {
   /**
    * Set the text to Bold. If the text is already bold, it reverts to normal.
    */
@@ -120,8 +120,10 @@ export default {
       document.execCommand(
         "insertHTML",
         false,
-        `<span contentEditable="false"><a href="${linkURL}" target="_blank">${text}</a></span>`
+        `<span contentEditable="false"><a href="${linkURL}" target="_blank" rel="noreferrer">${text}</a></span>`
       );
     }
   },
 };
+
+export default command;

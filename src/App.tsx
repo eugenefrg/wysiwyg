@@ -1,6 +1,6 @@
-import "antd/dist/antd.css";
+import "antd/dist/antd.min.css";
 import "./App.scss";
-import { Col, Layout, Row, Space, Typography } from "antd";
+import { Col, Layout, Row, Typography } from "antd";
 import Controls from "./components/controls";
 import DummyText from "./components/dummy-text";
 

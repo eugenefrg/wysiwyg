@@ -39,9 +39,9 @@ const DummyText: FC = () => (
     </div>
     <blockquote>
       <div>
-        // Here is an example of how the dummyText is inserted to the app.
+        {`// Here is an example of how the dummyText is inserted to the app.`}
       </div>
-      <div>//</div>
+      <div>{`//`}</div>
       <div>import "antd/dist/antd.css";</div>
       <div>{`import "./App.scss";`}</div>
       <div>{`import { Layout } from "antd";`}</div>
@@ -78,7 +78,7 @@ const DummyText: FC = () => (
     <div style={{ textAlign: "center" }}>
       - Made by{" "}
       <span contentEditable="false">
-        <a href="https://github.com/eugenefrg" target="_blank">
+        <a href="https://github.com/eugenefrg" target="_blank" rel="noreferrer">
           Eugene R.
         </a>
       </span>
@@ -86,7 +86,11 @@ const DummyText: FC = () => (
     <div style={{ textAlign: "center" }}>
       and you can view my Portfolio -&gt;{" "}
       <span contentEditable={false}>
-        <a href="https://eugenefrancisr.netlify.app/" target="_blank">
+        <a
+          href="https://eugenefrancisr.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
           here{" "}
         </a>
       </span>
