@@ -13,13 +13,16 @@ const DummyText: FC = () => (
       This has only been tested on{" "}
       <u>
         <b>
-          <i>Firefox 104 on Windows 10</i>
+          <i>Firefox 104</i>
         </b>
-      </u>
-      <b>
-        <i> </i>
-      </b>
-      and it is <s>super perfect</s> not without flaws
+      </u>{" "}
+      and{" "}
+      <u>
+        <b>
+          <i>Chrome 105</i>
+        </b>
+      </u>{" "}
+      on Windows 10 and it is <s>super perfect</s> not without flaws
       <u>
         <b>
           <i>

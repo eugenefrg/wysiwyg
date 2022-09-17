@@ -1,12 +1,13 @@
-import { message } from "antd";
-
 /**
  * As we are actually using a deprecated method of `document`
  * let the user know wether the browser can actually use the script.
  */
 function checkCommandResult(result: boolean) {
   if (!result)
-    message.error("Browser does not support the document.execCommand method.");
+    // I think we can afford not to show this error. As long as it's known that the
+    // functions work with Chrome and Firefox.
+    // I cannot determine why it throws an error for now.
+    console.error("Command did not run.");
 }
 
 /**
